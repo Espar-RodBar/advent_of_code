@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 30px auto;
+  color: rgb(34, 34, 34);
+  background-image: linear-gradient(
+    to right,
+    rgb(143, 143, 251),
+    rgb(83, 83, 225)
+  );
+}
+header {
+  height: 15vh;
+}
+h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main {
+  position: relative;
+}
+h2 {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+}
+form {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+textarea {
+  display: block;
+}
+button {
+  border-radius: 5px;
+  display: block;
+  width: 100px;
+  height: 50px;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: rgb(201, 201, 255);
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: rgb(255, 255, 255);
+  transform: scale(0.95);
+}
