@@ -1,4 +1,4 @@
-console.log('Advent of code solver')
+import { solution } from './day1.js'
 
 const form = document.querySelector('.form')
 const textArea = document.querySelector('textarea')
@@ -9,7 +9,11 @@ form.addEventListener('submit', function (e) {
   e.preventDefault()
   rawData = textArea.value
   textArea.value = ''
-  solver(rawData.split('\n'))
+  solver(rawData)
 })
 
-function solver(data) {}
+console.log()
+
+function solver(data) {
+  return solution(data)
+}
